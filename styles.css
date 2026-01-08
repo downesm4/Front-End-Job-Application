@@ -86,7 +86,7 @@ hr {
 .profile-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1100px;
+    max-width: 1100;
     gap: 1.5rem;
     margin: 2rem auto;
 }
@@ -97,6 +97,7 @@ hr {
     max-width: 400px;
     border-radius: 12px;
     justify-self: center;
+    align-self: center;
 }
 
 .profile-text {
@@ -104,10 +105,11 @@ hr {
     align-self: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
 
     .profile-grid {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -124,12 +126,12 @@ hr {
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: 1100px;
+    max-width: 1100;
     gap: 1.5rem;
     margin: 2rem auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
 
     .cards-grid {
         display: flex;
@@ -238,7 +240,7 @@ hr {
     justify-content: center;
     align-items: center;
 
-    height: 500px;
+    height: 600px;
 
     backface-visibility: hidden;
     border-radius: 12px;
@@ -251,7 +253,7 @@ hr {
     font-weight: bold
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
 
     .skills-grid {
         display: flex;
@@ -259,7 +261,7 @@ hr {
     }
 
     .skills-card {
-        height: 650px;
+        height: 700px;
     }
 }
 
