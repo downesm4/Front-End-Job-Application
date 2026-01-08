@@ -141,12 +141,12 @@ hr {
 @media (max-width: 768px) {
 
     .cards-grid {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
     }
 
     .card {
-        height: 300px;
-        overflow-y: scroll;
+        height: 250px;
     }
 
     .skills-card {
@@ -211,6 +211,10 @@ hr {
     transform: rotateY(180deg);
 }
 
+.card.is-flipped .card-back {
+    box-shadow: #0b4a07 0px 8px 10px -1px, #0b4a07 0px 4px 5px -1px;
+}
+
 .card:hover .card-front {
     box-shadow: #0b4a07 0px 8px 10px -1px, #0b4a07 0px 4px 5px -1px;
     transform: translateY(-10px);
@@ -260,7 +264,12 @@ hr {
 @media (max-width: 768px) {
 
     .skills-grid {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-card {
+        height: 650px;
     }
 }
 
